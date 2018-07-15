@@ -1,0 +1,25 @@
+<app-register>
+  <div class="app-register-title">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        ชื่อ
+        <input type="text" class="form-control" formControlName="name" />
+      </div>
+      <div class="form-group">
+        นามสกุล
+        <input type="text" class="form-control" formControlName="surname" />
+      </div>
+      <div class="form-group">
+        email
+        <input type="email" class="form-control" formControlName="email" />
+      </div>
+      <div class="form-group">
+        passwords
+        <input type="password" class="form-control" formControlName="passwords" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+    </form>
+  </div>
+</app-register>
